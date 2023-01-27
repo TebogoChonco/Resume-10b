@@ -1,0 +1,43 @@
+header {
+  background-image: url(greywood.jpg);
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  max-height: 500px;
+}
+
+img {
+  border-radius: 30%;
+  border: 2px solid rgb(204, 200, 196);
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+}
+
+@media screen and (min-width: 150px) {
+  .container {
+    flex-direction: column;
+    min-width: 40ch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .maxScreen {
+    display: flex;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  header {
+    height: 1350px;
+  }
+}
