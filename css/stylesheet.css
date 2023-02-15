@@ -1,6 +1,6 @@
 img {
   border-radius: 5%;
-  width:200px;
+  width: 200px;
   border: 3px solid rgb(184, 185, 187);
   margin: 5px;
 }
@@ -9,14 +9,29 @@ header {
   background-image: url(../images/greywood.jpg);
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  max-height: 400px;
+  max-height: 450px;
+
   margin: 0;
   padding: 0;
 }
 
-.container, .container-fluid,.container-xs, .container-sm, .container-lg, .container-md, .container-xl, .container-xxl
- {
+.container,
+.container-fluid,
+.container-xs,
+.container-sm,
+.container-lg,
+.container-md,
+.container-xl,
+.container-xxl {
   padding: 0;
+}
+
+#sidebar {
+  background-color: rgb(210, 208, 204);
+}
+
+#main {
+  background-color: rgb(236, 241, 240);
 }
 
 .card {
@@ -25,15 +40,12 @@ header {
 
 #Contact {
   background-color: rgb(212, 207, 188);
+  justify-content: center;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-}
-
-form{
-  width: 500px;
 }
 
 .container {
@@ -43,13 +55,11 @@ form{
 .footerIcon {
   border-radius: 50%;
   width: 100px;
-  
 }
 
-.bottom{
+.bottom {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 @media screen and (min-width: 150px) {
