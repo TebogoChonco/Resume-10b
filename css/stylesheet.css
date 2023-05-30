@@ -1,3 +1,7 @@
+html {
+  background-color: rgb(236, 241, 240);
+}
+
 img {
   border-radius: 5%;
   width: 300px;
@@ -52,7 +56,8 @@ header {
 #sidebar {
   background-color: rgb(210, 208, 204);
 }
-body{
+
+body {
   padding: 0;
 
 }
@@ -81,27 +86,51 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
+
 footer img {
-
-  width: 100px;
-
+  border: 0;
   margin: 5px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .footerIcon {
   border-radius: 50%;
   width: 100px;
 }
+.icon{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: space-around;
+
+}
+#ContactDetails {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #48402e;
+}
 
 .bottom {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 150px) {
   .container {
-    flex-direction: column;
+    display: grid;
+    height: 400px;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
   }
 }
 
@@ -121,7 +150,7 @@ footer img {
     flex-direction: column;
   }
 
-  .container-fluid-text-center-text-dark{
+  .container-fluid-text-center-text-dark {
     margin: 0, 0, 0, 0;
     padding: 0;
   }
@@ -132,7 +161,7 @@ footer img {
     max-height: 900px;
     padding: o;
     margin: 0;
-  
+
   }
 
   .intro {
